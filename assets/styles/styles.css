@@ -1,0 +1,64 @@
+/* Import fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Default styles and CSS Variables */
+
+:root {
+    --nutmeg: #854632;
+    --raspberry: #7b284f;
+    --main-bg-color-white: hsl(0, 0%, 100%);
+    --rose-white: #fff5fa;
+    --eggshell: #f3e6d8;
+    --light-gray: #e4ded8;
+    --light-brown: #5f574e;
+    --charcoal: #302d2c;
+
+    --main-font-family: "Outfit", sans-serif;
+    --display-font: "Young Serif", serif;
+    --main-font-size: 16px;
+    --font-headings: 1.75rem;
+    --font-weight-400: 400;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+}
+
+/* Basic Reset */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.2;
+}
+
+ul, ol {
+    padding: 0 1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    font-style: italic;
+    color: var(--raspberry);
+}
+
+body {
+    font-family: var(--main-font-family);
+    font-weight: var(--font-weight-400);
+    font-size: var(--main-font-size);
+    line-height: 1.5;
+    color: var(--light-brown);
+}
+
+/* table {
+    border-collapse: collapse;
+    width: 100%
+} */
