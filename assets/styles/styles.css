@@ -35,10 +35,6 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
-    line-height: 1.2;
-}
-
 ul, ol {
     padding: 0 1rem;
 }
@@ -56,9 +52,120 @@ body {
     font-size: var(--main-font-size);
     line-height: 1.5;
     color: var(--light-brown);
+    background: var(--eggshell);
 }
 
-/* table {
+table {
     border-collapse: collapse;
     width: 100%
-} */
+}
+
+/* Text Styles */
+
+h2, h3, h4 {
+    line-height: 1.2;
+    font-family: var(--display-font);
+    font-size: var(--font-headings);
+    font-weight: var(--font-weight-400);
+    color: var(--nutmeg);
+    margin-bottom: 1.5rem;
+}
+
+.recipe-title {
+    font-family: var(--display-font);
+    font-weight: var(--font-weight-400);
+    font-size: 2.75rem;
+    color: var(--charcoal);
+    margin-bottom: 1.5rem;
+}
+
+.prep-title {
+    font-size: 1.275rem;
+    font-weight: var(--font-weight-600);
+    color: var(--raspberry);
+    margin-bottom: .5rem;
+}
+
+[data-cell = "nutrient-value"] {
+    color: var(--nutmeg);
+    font-weight: var(--font-weight-600);
+}
+
+li {
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+}
+
+li::marker {
+    color: var(--nutmeg);
+    font-weight: var(--font-weight-600);
+}
+
+/* Layout Styles */
+
+.wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.recipe-wrapper {
+    background: var(--rose-white);
+    padding: 1.75rem;
+    margin: 6rem 0;
+    max-width: 50%;
+    border-radius: 2rem;
+}
+
+.recipe-img {
+    border-radius: .8rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+hr {
+    border: none;
+    outline: none;
+    height: 1px;
+    margin-top: 2rem;
+    background: var(--light-gray);
+}
+
+.prep-time {
+    padding: 1.75rem;
+    margin-top: 2rem;
+    background: var(--eggshell);
+    border-radius: .8rem;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+/* Responsive styles */
+
+@media (max-width: 500px) {
+    .recipe-wrapper {
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .recipe-img {
+        border-radius: 0;
+    }
+
+    .recipe-container {
+        padding: 0 1.75rem;
+    }
+
+    .recipe-title {
+        font-size: 2rem;
+    }
+
+}
